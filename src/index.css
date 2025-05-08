@@ -251,6 +251,7 @@ body {
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.18);
+  position: relative;
 }
 
 
@@ -306,14 +307,14 @@ body {
   white-space: nowrap;
   position: absolute;
   top: 97%;
-  left: 55%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.rotating-text::after {
+/*.rotating-text::after {
   content: "";
   margin-left: 3cm; 
-}
+}*/
 
 
 
@@ -360,6 +361,6 @@ body {
   }
   .rotating-text{
     top: 99%;
-    left: 70%;
+   
   }
 }
