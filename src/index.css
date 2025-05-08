@@ -368,4 +368,8 @@ body {
     width: 90%;
      min-height: 650px;
   }
+  .rotating-text{
+    top: 99%;
+    left: 50%;
+  }
 }
