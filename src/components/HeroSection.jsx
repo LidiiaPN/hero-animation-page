@@ -86,7 +86,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
-          style={{ fontSize: '1.2rem', marginBottom: '24px',   fontFamily: '"Rouge Script", cursive', fontWeight: 'bold', color:'#1976d2'}}
+          style={{ fontSize: '1.2rem', marginBottom: '24px',   fontWeight: 'bold', color:'#1976d2'}}
         >
           Я створюю сучасні веб-рішення для вашого бізнесу
         </motion.p>
