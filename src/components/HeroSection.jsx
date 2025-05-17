@@ -67,7 +67,6 @@ export default function HeroSection() {
        
           style={{
             fontSize: window.innerWidth <= 768 ? '2.25rem' : '3rem',
-            // fontSize: '2rem',
               marginBottom: '16px' }}
         >
           {title.split('').map((char, index) => (
