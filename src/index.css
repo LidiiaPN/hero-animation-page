@@ -209,6 +209,8 @@ body {
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  /*font-family: "Marck Script", sans-serif;
+  font-family: "Rouge Script", cursive*/
 }
 
 .hero p {
@@ -275,7 +277,8 @@ body {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  /*transition: transform 0.4s ease, box-shadow 0.4s ease;*/
+  transition: flex-grow 1.25s cubic-bezier(.17, .84, .44, 1);
   cursor: pointer;
 }
 
@@ -352,12 +355,13 @@ body {
   .option {
     width: 90%;
     min-height: 140px;
-    
-    transition: height 0.6s ease, transform 0.6s ease;
+    transition: flex-grow 1.25s cubic-bezier(.280, .25, .69, 38)!important;
+    /*transition: height 0.6s ease, transform 0.6s ease;*/
   }
   
   .option.active {
     min-height: 480px;
+   /* transition: flex-grow 1.25s cubic-bezier(.280, .25, .69, 38)!important;*/
   }
   .rotating-text{
     top: 99%;
