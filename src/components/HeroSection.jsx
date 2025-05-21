@@ -17,42 +17,51 @@ export default function HeroSection() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const title = 'Вітаю! Мене звати Лідія Перелигіна';
+  //const title = 'Вітаю! Мене звати <span style={{ whiteSpace: 'nowrap' }}>Лідія</span> Перелигіна';
+
+  const title = (
+  <>
+    Вітаю! Мене звати{' '}
+    <span style={{ whiteSpace: 'nowrap' }}>Лідія</span>{' '}
+    <span style={{ whiteSpace: 'nowrap' }}>Перелигіна</span>
+  </>
+);
+
 
   const projects = [
     {
       url: 'https://sp-fitness-eb42cc.gitlab.io/',
       img: './images/fitness-project.jpg',
       position: 'top',
-      alt: 'Інформативний сайт для фітнес-центру',
+      alt: 'Інформативний сайт для фітнес-центру (фронтенд)',
       description: 'Сторінка для фітнес-центру з динамічними функціями сортування та фільтрації. JavaScript, HTML5, CSS3',
     },
     {
       url: 'https://sporty-steel.vercel.app/',
       img: './images/shop-project.jpg',
       position: 'top',
-      alt: 'Інтернет-магазин спортивних товарів',
+      alt: 'Інтернет-магазин спортивних товарів (фронтенд+бекенд)',
       description: 'Магазин зі сторінками товарів і корзиною. React, Redux, React Router, Axios, MUI, Emotion, Formik, Yup, Vite, Sass, Jest, Node.js, MongoDB',
     },
     {
       url: 'https://step-project2-f47290.gitlab.io/',
       img: './images/diane-project2.jpg',
       position: 'bottom',
-      alt: 'Сайт-візитка творчої особи',
+      alt: 'Сайт-візитка творчої особи (верстка)',
       description: 'Проєкт зібрано за допомогою Gulp, реалізовано адаптивний дизайн для трьох розмірів екранів. HTML5, SCSS, Gulp',
     },
     {
       url: 'https://tinyurl.com/4ejr5ner',
       img: './images/education-project.jpg',
       position: 'top',
-      alt: 'Адаптивний вебсайт для освітнього центру',
+      alt: 'Адаптивний вебсайт для освітнього центру (верстка)',
       description: 'Використано медіа-запити для оптимізації на різних пристроях, включаючи мобільні телефони, планшети та десктопи. HTML5, CSS3, CSS Grid',
     },
     {
       url: 'https://react-hw6-nine.vercel.app/',
       img: './images/fruit-world-project.jpg',
       position: 'top',
-      alt: 'Інтернет-магазин фруктів',
+      alt: 'Інтернет-магазин фруктів (фронтенд)',
       description: 'Магазин зі сторінкою товарів, обраних товарів та корзиною. React, Redux, React Router, Jest',
     },
   ];
@@ -69,7 +78,8 @@ export default function HeroSection() {
             fontSize: window.innerWidth <= 768 ? '2.25rem' : '3rem',
               marginBottom: '16px' }}
         >
-          {title.split('').map((char, index) => (
+          {title}
+       { /*  {title.split('').map((char, index) => (
             <motion.span
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -79,7 +89,7 @@ export default function HeroSection() {
             >
               {char === ' ' ? '\u00A0' : char}
             </motion.span>
-          ))}
+          ))}*/}
         </motion.h1>
 
         <motion.p
