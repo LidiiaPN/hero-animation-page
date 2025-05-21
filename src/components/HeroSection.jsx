@@ -28,7 +28,7 @@ export default function HeroSection() {
       description: 'Сторінка для фітнес-центру з динамічними функціями сортування та фільтрації. JavaScript, HTML5, CSS3',
     },
     {
-      url: 'https://project-shop-sigma.vercel.app/',
+      url: 'https://sporty-steel.vercel.app/',
       img: './images/shop-project.jpg',
       position: 'top',
       alt: 'Інтернет-магазин спортивних товарів',
