@@ -17,7 +17,7 @@ export default function HeroSection() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  //const title = 'Вітаю! Мене звати <span style={{ whiteSpace: 'nowrap' }}>Лідія</span> Перелигіна';
+  //const title = 'Вітаю! Мене звати Лідія Перелигіна';
 
   const title = (
   <>
