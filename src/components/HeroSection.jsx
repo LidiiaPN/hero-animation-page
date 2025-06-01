@@ -29,6 +29,13 @@ export default function HeroSection() {
 
 
   const projects = [
+     {
+      url: 'vote-now-nine.vercel.app/',
+      img: './images/vote-project2.jpg',
+      position: 'top',
+      alt: 'Сайт-голосувалка (фронтенд+бекенд)',
+      description: 'Сайт з динамічними функціями голосування. Форма зворотного зв’язку працює за допомогою Телеграм чат-боту, також відправлені повідомлення зберігаються у МонгоДб. Картинки учасників згенеровані ai disney. JavaScript, MongoDB, Cloudinary, HTML5, CSS3',
+    },
     {
       url: 'https://sp-fitness-eb42cc.gitlab.io/',
       img: './images/fitness-project.jpg',
