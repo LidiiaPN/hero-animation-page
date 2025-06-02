@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+//import ParticlesBackground from "./ParticlesBackground";
 
 export default function HeroSection() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -28,7 +29,7 @@ export default function HeroSection() {
 
   const projects = [
      {
-      url: 'vote-now-nine.vercel.app/',
+      url: 'https://vote-now-nine.vercel.app/',
       img: './images/vote-project4.jpg',
       position: 'top',
       alt: 'Сайт-голосувалка (фронтенд+бекенд)',
@@ -73,6 +74,8 @@ export default function HeroSection() {
 
   return (
     <section className="hero">
+     {/*<ParticlesBackground />*/}
+
       <div className="glass-box">
         <motion.h1
           initial={{ opacity: 0 }}
