@@ -17,8 +17,6 @@ export default function HeroSection() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  //const title = 'Вітаю! Мене звати Лідія Перелигіна';
-
   const title = (
   <>
     Вітаю! Мене звати{' '}
@@ -31,10 +29,10 @@ export default function HeroSection() {
   const projects = [
      {
       url: 'vote-now-nine.vercel.app/',
-      img: './images/vote-project2.jpg',
+      img: './images/vote-project4.jpg',
       position: 'top',
       alt: 'Сайт-голосувалка (фронтенд+бекенд)',
-      description: 'Сайт з динамічними функціями голосування. Форма зворотного зв’язку працює за допомогою Телеграм чат-боту, також відправлені повідомлення зберігаються у МонгоДб. Картинки учасників згенеровані ai disney. JavaScript, MongoDB, Cloudinary, HTML5, CSS3',
+      description: 'Інтерактивний веб-застосунок з динамічними функціями голосування. Повідомлення з форми надсилаються в Telegram-бот та зберігаються у MongoDB. Картинки учасників AI-згенеровані та зберігаються у Cloudinary. JavaScript, MongoDB, Node.js, Cloudinary, HTML5, CSS3.',
     },
     {
       url: 'https://sp-fitness-eb42cc.gitlab.io/',
@@ -137,7 +135,7 @@ export default function HeroSection() {
                   initial={{ flex: 1 }}
                   animate={{
                     flex: isMobile ? undefined : isActive ? 6 : 1,
-                    height: isMobile ? (isActive ? 400 : 200) : 300,
+                    height: isMobile ? (isActive ? 500 : 300) : 400,
                   }}
                   /*transition={{ duration: 0.5 }}*/
                   transition={{ duration: isMobile ? 3 : 0.5,  ease: "easeInOut", }
@@ -167,14 +165,14 @@ export default function HeroSection() {
                         left: 0,
                         right: 0,
                        // top: '65%',
-                        top: window.innerWidth <= 768 ? '55%' : '65%',
+                        top: window.innerWidth <= 768 ? '55%' : '60%',
                         background: 'rgba(0, 0, 0, 0.6)',
                         padding: '12px',
                         textAlign: 'center',
                       }}
                     >
-                      <h3 style={{ margin: '0 0 8px' }}>{project.alt}</h3>
-                      <p style={{ fontSize: '14px', marginBottom: '10px' }}>{project.description}</p>
+                      <h4 style={{ margin: '0 0 8px' }}>{project.alt}</h4>
+                      <p style={{ fontSize: '14px', marginBottom: '5px' }}>{project.description}</p>
                       <a
                         href={project.url}
                         target="_blank"
